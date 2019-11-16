@@ -7,7 +7,7 @@ def main():
 
     usr = df['installation_id'].drop_duplicates()
 
-    sel_usr = usr.sample(170)
+    sel_usr = usr.sample(100)
 
     sel_df = df.loc[df['installation_id'].isin(sel_usr)]
 
